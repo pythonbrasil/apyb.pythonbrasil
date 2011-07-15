@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<object>
+ <default_language value="pt-br"/>
+ <use_path_negotiation value="False"/>
+ <use_cookie_negotiation value="False"/>
+ <set_cookie_everywhere value="False"/>
+ <use_request_negotiation value="False"/>
+ <use_cctld_negotiation value="False"/>
+ <use_content_negotiation value="False"/>
+ <use_combined_language_codes value="True"/>
+ <display_flags value="False"/>
+ <start_neutral value="False"/>
+ <use_subdomain_negotiation value="False"/>
+ <authenticated_users_only value="False"/>
+ <supported_langs>
+  <element value="pt-br"/>
+ </supported_langs>
+</object>

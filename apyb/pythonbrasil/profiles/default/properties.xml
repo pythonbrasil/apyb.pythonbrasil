@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<site>
+ <property name="title">PythonBrasil[7]</property>
+ <property
+    name="description">7o. Encontro da comunidade Python Brasileira, este ano em conjunto com o Plone Symposium South America</property>
+ <property name="selectable_views" type="lines">
+  <element value="folder_listing"/>
+  <element value="news_listing"/>
+ </property>
+ <property name="email_from_address"
+    type="string">pythonbrasil@pythonbrasil.org.br</property>
+ <property name="email_from_name" type="string">Site PythonBrasil</property>
+ <property name="validate_email" type="boolean">False</property>
+ <property name="email_charset" type="string">utf-8</property>
+ <property name="enable_permalink" type="boolean">False</property>
+ <property name="default_page" type="string">front-page</property>
+</site>
