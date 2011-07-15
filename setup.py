@@ -30,9 +30,6 @@ setup(name='apyb.pythonbrasil',
           'sc.social.like',
           'apyb.registration',
           'apyb.papers',
-          'collective.transmogrifier',
-          'plone.app.transmogrifier',
-          'quintagroup.transmogrifier',
       ],
       entry_points="""
       # -*- Entry points: -*-
