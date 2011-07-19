@@ -9,6 +9,7 @@ from plone.dexterity.utils import createContent
 from apyb.registration.registration import IRegistration
 from apyb.registration.registrations import IRegistrations
 from apyb.registration.attendee import IAttendee
+from apyb.papers.program import IProgram
 
 TIPO = {
       '1':'apyb',
@@ -25,10 +26,10 @@ PAIS = {
 }
 
 CAMISETA ={
-    'P','S',    
-    'M','M',
-    'G','L',
-    'X','X',
+    'P':'S',    
+    'M':'M',
+    'G':'L',
+    'X':'X',
 }
 
 class View(grok.View):
@@ -82,7 +83,7 @@ class View(grok.View):
            tmpAttendee['partners'] = data['fields']['optin_parceiros']
            tmpAttendees.append(tmpAttendee)
         else: 
-            for att in data['fields']['participantes']
+            for att in data['fields']['participantes']:
                 tmpAttendee = {}
                 tmpAttendee['city'] = data['fields']['city']
                 tmpAttendee['state'] = data['fields']['estado']
@@ -102,8 +103,11 @@ class View(grok.View):
         return [reg,attendees]
     
     def render(self):
-        data = open('inscricoes.pickle')
-        data = pickle.load(data)
+        try:
+            data = open('inscricoes.pickle')
+            data = pickle.load(data)
+        except EnvironmentError:
+            data = []
         for item in data:
             reg,attendees = self.convertFromDict(item)
             regObj = addContentToContainer(context,reg)
