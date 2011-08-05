@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-08-05 01:44+0000\n"
+"POT-Creation-Date: 2011-08-05 01:46+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -13,6 +13,14 @@ msgstr ""
 "Language-Name: English\n"
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: DOMAIN\n"
+
+#: ../profiles/default/types/apyb.pythonbrasil.edition.xml
+msgid "An edition of PythonBrasil conference"
+msgstr ""
+
+#: ../profiles/default/types/apyb.pythonbrasil.edition.xml
+msgid "Edition"
+msgstr ""
 
 #: ../edition.py:26
 msgid "Year"

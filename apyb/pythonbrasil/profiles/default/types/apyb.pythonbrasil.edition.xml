@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <object name="apyb.pythonbrasil.edition"
    meta_type="Dexterity FTI"
-   i18n:domain="apyb.registration" xmlns:i18n="http://xml.zope.org/namespaces/i18n">
+   i18n:domain="apyb.pythonbrasil" xmlns:i18n="http://xml.zope.org/namespaces/i18n">
 
   <!-- Basic metadata -->
   <property name="title" i18n:translate="">Edition</property>
   <property name="description"
-    i18n:translate="">Folderish content that contains registrations</property>
+    i18n:translate="">An edition of PythonBrasil conference</property>
   <property name="icon_expr">string:${portal_url}/folder_icon.png</property>
   <property name="factory">apyb.pythonbrasil.edition</property>
   <property name="global_allow">True</property>
