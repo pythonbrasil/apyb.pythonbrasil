@@ -33,8 +33,7 @@
      })();
    
    &lt;/script&gt;</property>
-  <property name="external_links_open_new_window"
-     type="string">true</property>
+  <property name="external_links_open_new_window" type="string">true</property>
   <property name="use_email_as_login" type="boolean">True</property>
   <property name="user_registration_fields" type="lines">
    <element value="fullname"/>

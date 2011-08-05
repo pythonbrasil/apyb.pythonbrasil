@@ -4,7 +4,7 @@
  <use_path_negotiation value="False"/>
  <use_cookie_negotiation value="False"/>
  <set_cookie_everywhere value="False"/>
- <use_request_negotiation value="False"/>
+ <use_request_negotiation value="True"/>
  <use_cctld_negotiation value="False"/>
  <use_content_negotiation value="False"/>
  <use_combined_language_codes value="True"/>
@@ -14,5 +14,7 @@
  <authenticated_users_only value="False"/>
  <supported_langs>
   <element value="pt-br"/>
+  <element value="es"/>
+  <element value="en"/>
  </supported_langs>
 </object>
