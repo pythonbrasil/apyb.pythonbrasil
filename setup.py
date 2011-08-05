@@ -27,6 +27,8 @@ setup(name='apyb.pythonbrasil',
           'setuptools',
           # -*- Extra requirements: -*-
           'plone.app.theming',
+          'Products.Maps==2.1.1',
+          'collective.simplesocial==1.6',
           'sc.social.like',
           'apyb.registration',
           'apyb.papers',
