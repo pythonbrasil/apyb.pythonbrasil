@@ -40,7 +40,85 @@
    <element value="username"/>
    <element value="email"/>
    <element value="password"/>
+   <element value="portrait"/>
    <element value="mail_me"/>
   </property>
  </object>
+ <object name="maps_properties" meta_type="Plone Property Sheet">
+  <property name="title">Maps Properties</property>
+  <property name="map_google_api_keys" type="lines">
+   <element
+      value="http://localhost:8080 | ABQIAAAAaKes6QWqobpCx2AOamo-shTwM0brOpm-All5BF6PoaKBxRWWERSUWbHs4SIAMkeC1KV98E2EdJKuJw"/>
+   <element
+      value="http://testing:8080   | ABQIAAAAaKes6QWqobpCx2AOamo-shS8tbwkwQvVo8y2jCgM8I6Nv1EJJxSpbhzdXfa06Vx2SpX3do9jOWJM6g"/>
+   <element
+      value="http://www.pythonbrasil.org.br|ABQIAAAA1SVk5AWvRtCghkAT_BnaixSUuD350L4yPeDTPrM_gHxUWqX5qhRPZyBh_M3OEKMbdcT_BqtwWVDiHg"/>
+   <element
+      value="http://pythonbrasil.org.br|ABQIAAAA1SVk5AWvRtCghkAT_BnaixSUuD350L4yPeDTPrM_gHxUWqX5qhRPZyBh_M3OEKMbdcT_BqtwWVDiHg"/>
+  </property>
+  <property name="google_ajaxsearch_api_keys" type="lines">
+   <element
+      value="http://localhost:8080 | ABQIAAAAMKqifBTazCnHqAnQfZ6DAxTwM0brOpm-All5BF6PoaKBxRWWERTY0DuDpOVZe50LuUPSi4EGcO9Bxg"/>
+   <element
+      value="http://testing:8080   | ABQIAAAAMKqifBTazCnHqAnQfZ6DAxS8tbwkwQvVo8y2jCgM8I6Nv1EJJxQCGO61VsKeAyjbr4Nl6XCQc_gtqQ"/>
+   <element
+      value="http://www.pythonbrasil.org.br|ABQIAAAA1SVk5AWvRtCghkAT_BnaixSUuD350L4yPeDTPrM_gHxUWqX5qhRPZyBh_M3OEKMbdcT_BqtwWVDiHg"/>
+  </property>
+  <property name="map_markers" type="lines">
+   <element
+      value="Name | Icon | iconSize | iconAnchor | infoWindowAnchor | Shadow | shadowSize | infoShadowAnchor"/>
+   <element
+      value="Red Marker     | marker-red.png       | 20,34 | 9,34 | 9,2 | shadow50.png | 37,34 | 18,25"/>
+   <element
+      value="Green Marker   | marker-green.png     | 20,34 | 9,34 | 9,2 | shadow50.png | 37,34 | 18,25"/>
+   <element
+      value="Blue Marker    | marker-blue.png      | 20,34 | 9,34 | 9,2 | shadow50.png | 37,34 | 18,25"/>
+   <element
+      value="Yellow Marker  | marker-yellow.png    | 20,34 | 9,34 | 9,2 | shadow50.png | 37,34 | 18,25"/>
+   <element
+      value="Magenta Marker | marker-magenta.png   | 20,34 | 9,34 | 9,2 | shadow50.png | 37,34 | 18,25"/>
+  </property>
+  <property name="map_default_location" type="string">0.0, 0.0</property>
+  <property name="map_default_maptype" type="string">normal</property>
+ </object>
+ <object name="fb_properties" meta_type="Plone Property Sheet">
+  <property name="title">Facebook properties</property>
+  <property name="app_id" type="string"></property>
+  <property name="post_to_page_available" type="boolean">True</property>
+  <property name="page_id" type="string"></property>
+  <property name="like_button_available" type="boolean">True</property>
+  <property name="like_button_types" type="lines">
+   <element value="Document"/>
+   <element value="Event"/>
+   <element value="News Item"/>
+  </property>
+  <property name="like_button_layout" type="string">standard</property>
+  <property name="like_button_show_faces" type="boolean">True</property>
+  <property name="like_button_width" type="int">450</property>
+  <property name="like_button_action" type="string">like</property>
+  <property name="like_button_font" type="string"></property>
+  <property name="like_button_color_scheme" type="string">light</property>
+  <property name="like_button_ref" type="string"></property>
+ </object>
+ <object name="sc_social_likes_properties" meta_type="Plone Property Sheet">
+  <property name="title"></property>
+  <property name="enabled_portal_types" type="lines">
+   <element value="apyb.pythonbrasil.edition"/>
+   <element value="Event"/>
+   <element value="GeoLocation"/>
+   <element value="News Item"/>
+   <element value="Document"/>
+   <element value="apyb.papers.speaker"/>
+   <element value="apyb.papers.talk"/>
+   <element value="apyb.papers.track"/>
+  </property>
+  <property name="typebutton" type="string">horizontal</property>
+  <property name="twitter_enabled" type="boolean">True</property>
+  <property name="twittvia" type="string">pythonbrasil</property>
+  <property name="fb_enabled" type="boolean">True</property>
+  <property name="fbaction" type="string">recommend</property>
+  <property name="fbadmins" type="string">ericof</property>
+  <property name="gp_enabled" type="boolean">True</property>
+ </object>
+
 </object>

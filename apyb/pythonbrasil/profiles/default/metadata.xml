@@ -4,5 +4,8 @@
   <dependencies>
     <dependency>profile-apyb.registration:default</dependency>
     <dependency>profile-apyb.papers:default</dependency>
+    <dependency>profile-Products.Maps:default</dependency>
+    <dependency>profile-collective.simplesocial:fbconnect</dependency>
+    <dependency>profile-sc.social.like:default</dependency>
   </dependencies>
 </metadata>
