@@ -20,4 +20,11 @@
       />
   <!-- -*- extra stuff goes here -*- -->
   
+  <adapter
+      for="Products.CMFCore.interfaces.IContentish"
+      provides="plone.stringinterp.interfaces.IStringSubstitution"
+      factory=".adapters.EmailSubstitution"
+      name="content_email"
+      />
+  
 </configure>
