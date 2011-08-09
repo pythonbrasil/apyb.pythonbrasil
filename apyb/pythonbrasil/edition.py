@@ -21,7 +21,6 @@ class IEdition(form.Schema):
     """
     A edition of the conference
     """
-    
     year = schema.Int(
         title=_(u"Year"),
         required=True,
