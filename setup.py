@@ -32,6 +32,7 @@ setup(name='apyb.pythonbrasil',
           'sc.social.like',
           'apyb.registration',
           'apyb.papers',
+          'webcouturier.dropdownmenu==2.1'
       ],
       entry_points="""
       # -*- Entry points: -*-
