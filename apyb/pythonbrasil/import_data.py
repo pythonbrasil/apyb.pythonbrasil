@@ -153,6 +153,8 @@ class View(grok.View):
         i = 0
         for item in data:
             reg,attendees = self.convertFromDict(item)
+            if reg.id in context.objectIds():
+                continue
             regObj = addContentToContainer(context,reg)
             for attendee in attendees:
                 attObj = addContentToContainer(regObj,attendee,checkConstraints=False)
@@ -167,4 +169,4 @@ class View(grok.View):
                     wt.doActionFor(regObj[attId],'confirm')
             i +=1
             print i
-        return 'Foo'
+        return 'Foo %d' % i
