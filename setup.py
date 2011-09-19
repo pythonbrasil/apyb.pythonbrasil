@@ -30,7 +30,7 @@ setup(name='apyb.pythonbrasil',
           'Products.Maps==2.1.1',
           'collective.simplesocial==1.6',
           'Products.PloneFormGen',
-          'sc.social.like',
+          'sc.social.like>=0.8',
           'apyb.registration',
           'apyb.papers',
           'webcouturier.dropdownmenu==2.1'
