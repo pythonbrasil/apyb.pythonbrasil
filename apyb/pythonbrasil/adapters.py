@@ -15,3 +15,13 @@ class EmailSubstitution(BaseSubstitution):
     
     def safe_call(self):
         return self.context.email
+
+
+class UIDSubstitution(BaseSubstitution):
+    adapts(IContentish)
+    
+    category = _(u'All Content')
+    description = _(u'Content UID')
+    
+    def safe_call(self):
+        return self.context.UID()

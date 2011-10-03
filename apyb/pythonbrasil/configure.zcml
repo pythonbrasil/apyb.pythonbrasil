@@ -28,6 +28,13 @@
       name="content_email"
       />
 
+  <adapter
+      for="Products.CMFCore.interfaces.IContentish"
+      provides="plone.stringinterp.interfaces.IStringSubstitution"
+      factory=".adapters.UIDSubstitution"
+      name="content_uid"
+      />
+
   <!-- database config for pas.plugin.sqlalchemy -->
 
   <include package="z3c.saconfig" file="meta.zcml" />
